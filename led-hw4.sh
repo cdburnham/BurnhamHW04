@@ -1,10 +1,11 @@
 #!/bin/bash
-# A small Bash script to set up User LED3 to be turned on or off from 
-#  Linux console. Written by Derek Molloy (derekmolloy.ie) for the 
-#  book Exploring BeagleBone. Modified by Cameron Burnham, 2/27/25
+#  Script to blink the onboard LED3 on the BBB n times
+#  Written by Cameron Burnham, 2/27/2025
 #  Modified to blink n times, with two arguments:
 # (arg1) = "blink" to turn the LED on and off.
 # (arg2) = integer, number of times to blink the LED.
+# Example invocation: ./led-hw4.sh flash 5
+# The above example would blink the LED five times.
 
 LED3_PATH=/sys/class/leds/beaglebone:green:usr3
 
